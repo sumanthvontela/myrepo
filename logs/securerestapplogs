@@ -1813,3 +1813,197 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does no
 [2025-09-16 17:07:14] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
 [2025-09-16 17:07:14] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.
 [2025-09-16 17:40:43] [WARN ] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m22s651ms235µs600ns).
+[2025-09-16 18:01:34] [INFO ] Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 18:01:34] [INFO ] SecurerestappApplication - Starting SecurerestappApplication using Java 17.0.11 with PID 12300 (E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp\target\classes started by PTPL-675 in E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp)
+[2025-09-16 18:01:34] [INFO ] SecurerestappApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 18:01:34] [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 18:01:34] [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+[2025-09-16 18:01:34] [INFO ] TomcatWebServer - Tomcat initialized with port 8080 (http)
+[2025-09-16 18:01:34] [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:34] [INFO ] StandardService - Starting service [Tomcat]
+[2025-09-16 18:01:34] [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 18:01:34] [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 18:01:34] [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 645 ms
+[2025-09-16 18:01:34] [INFO ] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 18:01:34] [INFO ] Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 18:01:34] [INFO ] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 18:01:35] [INFO ] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 18:01:35] [INFO ] HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 18:01:35] [INFO ] HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@15130002
+[2025-09-16 18:01:35] [INFO ] HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 18:01:35] [INFO ] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 18:01:36] [INFO ] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 18:01:36] [INFO ] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:01:36] [WARN ] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-09-16 18:01:36] [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:36] [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2025-09-16 18:01:36] [INFO ] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:01:36] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 18:01:36] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 18:01:36] [INFO ] ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2025-09-16 18:01:36] [ERROR] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[2025-09-16 18:01:40] [INFO ] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2025-09-16 18:01:40] [INFO ] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 18:01:40] [INFO ] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:40] [INFO ] GracefulShutdown - Graceful shutdown complete
+[2025-09-16 18:01:40] [INFO ] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:40] [INFO ] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:01:40] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 18:01:40] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 18:01:43] [INFO ] Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 18:01:43] [INFO ] SecurerestappApplication - Starting SecurerestappApplication using Java 17.0.11 with PID 24092 (E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp\target\classes started by PTPL-675 in E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp)
+[2025-09-16 18:01:43] [INFO ] SecurerestappApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 18:01:43] [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 18:01:43] [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+[2025-09-16 18:01:44] [INFO ] TomcatWebServer - Tomcat initialized with port 8080 (http)
+[2025-09-16 18:01:44] [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:44] [INFO ] StandardService - Starting service [Tomcat]
+[2025-09-16 18:01:44] [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 18:01:44] [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 18:01:44] [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+[2025-09-16 18:01:44] [INFO ] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 18:01:44] [INFO ] Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 18:01:44] [INFO ] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 18:01:44] [INFO ] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 18:01:44] [INFO ] HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 18:01:44] [INFO ] HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@37caecda
+[2025-09-16 18:01:44] [INFO ] HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 18:01:45] [INFO ] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 18:01:45] [INFO ] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 18:01:46] [INFO ] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:01:46] [WARN ] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-09-16 18:01:46] [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:01:46] [INFO ] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+[2025-09-16 18:01:46] [INFO ] SecurerestappApplication - Started SecurerestappApplication in 3.494 seconds (process running for 4.088)
+[2025-09-16 18:02:11] [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 18:02:11] [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 18:02:11] [INFO ] DispatcherServlet - Completed initialization in 1 ms
+[2025-09-16 18:07:45] [INFO ] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2025-09-16 18:07:45] [INFO ] GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+[2025-09-16 18:07:45] [INFO ] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:07:45] [INFO ] GracefulShutdown - Graceful shutdown complete
+[2025-09-16 18:07:45] [INFO ] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:07:45] [INFO ] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:07:45] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 18:07:45] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 18:08:18] [INFO ] Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 18:08:18] [INFO ] SecurerestappApplication - Starting SecurerestappApplication using Java 17.0.11 with PID 25964 (E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp\target\classes started by PTPL-675 in E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp)
+[2025-09-16 18:08:18] [INFO ] SecurerestappApplication - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 18:08:18] [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 18:08:18] [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+[2025-09-16 18:08:19] [INFO ] TomcatWebServer - Tomcat initialized with port 8080 (http)
+[2025-09-16 18:08:19] [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:08:19] [INFO ] StandardService - Starting service [Tomcat]
+[2025-09-16 18:08:19] [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+[2025-09-16 18:08:19] [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+[2025-09-16 18:08:19] [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 634 ms
+[2025-09-16 18:08:19] [INFO ] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 18:08:19] [INFO ] Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 18:08:19] [INFO ] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 18:08:19] [INFO ] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 18:08:19] [INFO ] HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 18:08:19] [INFO ] HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@43fe2008
+[2025-09-16 18:08:19] [INFO ] HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 18:08:19] [INFO ] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 18:08:20] [INFO ] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 18:08:20] [INFO ] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:08:20] [WARN ] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-09-16 18:08:20] [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2025-09-16 18:08:20] [INFO ] TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+[2025-09-16 18:08:20] [INFO ] SecurerestappApplication - Started SecurerestappApplication in 2.616 seconds (process running for 3.237)
+[2025-09-16 18:08:27] [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-09-16 18:08:27] [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-16 18:08:27] [INFO ] DispatcherServlet - Completed initialization in 1 ms
+[2025-09-16 18:08:27] [INFO ] RegistrationController - Received registration request for username: sumanth
+[2025-09-16 18:08:27] [INFO ] RegistrationService - Registering user with username: sumanth
+[2025-09-16 18:08:27] [INFO ] RegistrationService - User registered with id: null
+[2025-09-16 18:08:27] [INFO ] RegistrationController - Registration successful for user id: 1
+[2025-09-16 18:08:32] [INFO ] RegistrationController - Received registration request for username: sumadhdhdhh
+[2025-09-16 18:08:32] [INFO ] RegistrationService - Registering user with username: sumadhdhdhh
+[2025-09-16 18:08:32] [INFO ] RegistrationService - User registered with id: null
+[2025-09-16 18:08:32] [INFO ] RegistrationController - Registration successful for user id: 2
+[2025-09-16 18:08:35] [INFO ] RegistrationController - Received registration request for username: sumaddfdbnndnhdhdhh
+[2025-09-16 18:08:35] [INFO ] RegistrationService - Registering user with username: sumaddfdbnndnhdhdhh
+[2025-09-16 18:08:35] [INFO ] RegistrationService - User registered with id: null
+[2025-09-16 18:08:35] [INFO ] RegistrationController - Registration successful for user id: 3
+[2025-09-16 18:08:56] [INFO ] RegistrationController - Update request for user id: 2
+[2025-09-16 18:08:56] [INFO ] RegistrationService - User updated with id: 2
+[2025-09-16 18:10:08] [INFO ] RegistrationController - Delete request for user id: 2
+[2025-09-16 18:10:08] [INFO ] RegistrationService - User deleted with id: 2
+[2025-09-16 18:10:58] [INFO ] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.posidex.securerestapp.controller.RegistrationControllerTest]: RegistrationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2025-09-16 18:10:58] [INFO ] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.posidex.securerestapp.SecurerestappApplication for test class com.posidex.securerestapp.controller.RegistrationControllerTest
+[2025-09-16 18:10:59] [INFO ] Version - HV000001: Hibernate Validator 8.0.3.Final
+[2025-09-16 18:10:59] [INFO ] RegistrationControllerTest - Starting RegistrationControllerTest using Java 17.0.11 with PID 19264 (started by PTPL-675 in E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp)
+[2025-09-16 18:10:59] [INFO ] RegistrationControllerTest - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 18:11:00] [INFO ] SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[2025-09-16 18:11:00] [INFO ] TestDispatcherServlet - Initializing Servlet ''
+[2025-09-16 18:11:00] [INFO ] TestDispatcherServlet - Completed initialization in 1 ms
+[2025-09-16 18:11:00] [INFO ] RegistrationControllerTest - Started RegistrationControllerTest in 1.763 seconds (process running for 2.973)
+[2025-09-16 18:11:00] [INFO ] RegistrationController - Update request for user id: 1
+[2025-09-16 18:11:00] [INFO ] RegistrationController - Delete request for user id: 1
+[2025-09-16 18:11:00] [INFO ] AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.posidex.securerestapp.SecurerestappApplicationTests]: SecurerestappApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2025-09-16 18:11:00] [INFO ] SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.posidex.securerestapp.SecurerestappApplication for test class com.posidex.securerestapp.SecurerestappApplicationTests
+[2025-09-16 18:11:00] [INFO ] SecurerestappApplicationTests - Starting SecurerestappApplicationTests using Java 17.0.11 with PID 19264 (started by PTPL-675 in E:\S&ITraining\Day1-3rd_week_15thSep\securerestapp)
+[2025-09-16 18:11:00] [INFO ] SecurerestappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[2025-09-16 18:11:01] [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-09-16 18:11:01] [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[2025-09-16 18:11:01] [INFO ] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-09-16 18:11:01] [INFO ] Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+[2025-09-16 18:11:01] [INFO ] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-09-16 18:11:01] [INFO ] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2025-09-16 18:11:01] [INFO ] HikariDataSource - HikariPool-1 - Starting...
+[2025-09-16 18:11:02] [INFO ] HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7ddcd3d
+[2025-09-16 18:11:02] [INFO ] HikariDataSource - HikariPool-1 - Start completed.
+[2025-09-16 18:11:02] [INFO ] pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 19.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[2025-09-16 18:11:03] [INFO ] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-09-16 18:11:03] [INFO ] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:11:03] [WARN ] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-09-16 18:11:03] [INFO ] SecurerestappApplicationTests - Started SecurerestappApplicationTests in 2.672 seconds (process running for 5.909)
+[2025-09-16 18:11:03] [INFO ] RegistrationService - User deleted with id: 1
+[2025-09-16 18:11:03] [INFO ] RegistrationService - User updated with id: 1
+[2025-09-16 18:11:03] [INFO ] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-09-16 18:11:03] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2025-09-16 18:11:03] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.

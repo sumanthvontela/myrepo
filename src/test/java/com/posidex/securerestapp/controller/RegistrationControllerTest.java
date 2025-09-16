@@ -1,10 +1,12 @@
 package com.posidex.securerestapp.controller;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -16,7 +18,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.posidex.securerestapp.dto.UserDetailsDto;
-import com.posidex.securerestapp.entity.UserDetails;
 import com.posidex.securerestapp.service.RegistrationService;
 
 @WebMvcTest(RegistrationController.class)
@@ -24,36 +25,34 @@ public class RegistrationControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
     @MockBean
     private RegistrationService registrationService;
-
     @Autowired
     private ObjectMapper objectMapper;
 
     @Test
-    public void testRegisterUser() throws Exception {
+    public void testUpdateUser() throws Exception {
+        Long userId = 1L;
         UserDetailsDto dto = new UserDetailsDto();
-        dto.setUsername("testuser");
-        dto.setEmail("test@example.com");
-        dto.setPassword("password123");
-        dto.setSecurityQuestion("Your pet's name?");
-        dto.setSecurityAnswer("Fluffy");
+        dto.setUsername("updatedUser");
+        dto.setEmail("updated@mail.com");
+        when(registrationService.updateUser(eq(userId), any(UserDetailsDto.class))).thenReturn(dto);
 
-        UserDetails userDetails = new UserDetails();
-        userDetails.setId(1L);
-        userDetails.setUsername(dto.getUsername());
-        userDetails.setEmail(dto.getEmail());
-
-        when(registrationService.registerUser(any(UserDetailsDto.class))).thenReturn(userDetails);
-
-        mockMvc.perform(post("/api/register")
+        mockMvc.perform(put("/api/users/{id}", userId)
                 .contentType("application/json")
                 .content(objectMapper.writeValueAsString(dto)))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.id").value(1L))
-            .andExpect(jsonPath("$.username").value("testuser"));
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.username").value("updatedUser"))
+                .andExpect(jsonPath("$.email").value("updated@mail.com"));
+    }
 
-        verify(registrationService, times(1)).registerUser(any(UserDetailsDto.class));
+    @Test
+    public void testDeleteUser() throws Exception {
+        Long userId = 1L;
+        doNothing().when(registrationService).deleteUser(userId);
+
+        mockMvc.perform(delete("/api/users/{id}", userId))
+                .andExpect(status().isOk())
+                .andExpect(content().string("User deleted successfully!"));
     }
 }
