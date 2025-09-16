@@ -1812,3 +1812,4 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does no
 [2025-09-16 17:07:14] [INFO ] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 [2025-09-16 17:07:14] [INFO ] HikariDataSource - HikariPool-1 - Shutdown initiated...
 [2025-09-16 17:07:14] [INFO ] HikariDataSource - HikariPool-1 - Shutdown completed.
+[2025-09-16 17:40:43] [WARN ] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m22s651ms235µs600ns).
